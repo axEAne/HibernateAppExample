@@ -48,8 +48,7 @@ public class UserDaoImpl implements UserDao{
 
     @Override
     public List<User> findAll() {
-        //It doesen't work, so I'll fix that later.
-        //List<User> users = (List<User>)  HibernateSessionFactoryUtil.getSessionFactory().openSession().createQuery("from User", User.class).list();
+        List<User> users = (List<User>)  HibernateSessionFactoryUtil.getSessionFactory().openSession().createQuery("from User", User.class).list();
         return null;
     }
 }
